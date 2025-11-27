@@ -1,0 +1,149 @@
+##############################
+#      JAVA / SPRING BOOT    #
+##############################
+
+# Maven
+backend/target/
+/.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+/logs/
+
+# Maven build files
+*.log
+*.tmp
+hs_err_pid*
+replay_pid*
+
+# Java and IDE
+*.class
+*.iml
+*.ipr
+*.iws
+*.project
+*.classpath
+*.settings/
+*.factorypath
+
+# IntelliJ IDEA
+.idea/
+out/
+*/out/
+
+# Eclipse
+.buildpath
+.project
+.settings/
+
+# VSCode
+.vscode/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+##############################
+#          PYTHON            #
+##############################
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+frontend/mi_entorno/
+
+# Python packages
+*.egg
+*.egg-info/
+dist/
+build/
+
+# GTK cache and artifacts
+*.ui~
+*.glade~
+
+##############################
+#        FRONTEND            #
+##############################
+
+# Compiled GTK CSS cache (sometimes generated)
+*.css~
+*.bak
+
+# Local images cache (if generated)
+frontend/images/*.tmp
+
+##############################
+#        CONFIG / SECRETS    #
+##############################
+
+# Application config overrides
+application-test.yml
+application-local.yml
+application-dev.yml
+
+# User-specific configs
+*.local
+*.secret
+*.env
+.env.*
+
+# JWT keys (important)
+*.key
+*.pem
+
+##############################
+#          DATABASE          #
+##############################
+
+# MySQL dumps
+*.sql
+*.dump
+*.bak
+
+##############################
+#           SYSTEM           #
+##############################
+
+# Linux/macOS system files
+.DS_Store
+*.swp
+*.lock
+*.kate-swp
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+##############################
+#         OTHER              #
+##############################
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+##############################
+#       PROJECT-SPECIFIC     #
+##############################
+
+# Cached API responses (if generated)
+frontend/cache/
+
+# Python compiled schemas (if any)
+*.pickle
+
+frontend/images
