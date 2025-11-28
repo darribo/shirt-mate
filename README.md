@@ -156,15 +156,31 @@ http://localhost:8080
 
 ### Frontend
 
+El frontend de escritorio se conecta a la API REST expuesta por el backend en `http://localhost:8080`.
+
+---
+
+## 🧩 Dependencias necesarias para ejecutar el frontend (GTK4 / PyGObject)
+
+El frontend está construido con **GTK4 (PyGObject)**.  
+Estas librerías **NO se instalan mediante pip**, sino que deben estar instaladas en el sistema.
+
+En Ubuntu/Linux instala:
+
 ```bash
+sudo apt install python3-gi gir1.2-gtk-4.0 libgtk-4-dev gir1.2-adw-1
+
+Una vez instaladas, puedes activar el entorno virtual e instalar las dependencias Python:
+
 cd frontend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python3 Main.py
-```
 
-El frontend de escritorio se conecta a la API REST expuesta por el backend en `http://localhost:8080`.
+Si no instalas las dependencias del sistema, aparecerá el error:
+
+ModuleNotFoundError: No module named 'gi'
 
 ---
 
